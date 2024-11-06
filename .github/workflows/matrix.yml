@@ -1,0 +1,14 @@
+on:
+  workflow_call:
+    inputs:
+      name:
+        type: string
+        default: World
+jobs:
+  matrix:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        greeting: [Hello, Hola, Bonjour]
+    steps:
+      - run: echo '${{ matrix.greeting }}, ${{ inputs.name }}!'
