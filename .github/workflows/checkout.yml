@@ -4,5 +4,13 @@ jobs:
   checkout:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout caller repository
+        uses: actions/checkout@v4
+      - run: git remote -v
+
+      - name: Checkout called repository
+        uses: actions/checkout@v4
+        with:
+          repository: remarkablemark/github-actions-reusable-workflows-called
+          ref: master
       - run: git remote -v
