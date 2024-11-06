@@ -2,6 +2,7 @@
 
 GitHub Actions reusable workflows called. Called by [`github-actions-reusable-workflows-caller`](https://github.com/remarkablemark/github-actions-reusable-workflows-caller).
 
+- [`checkout.yml`](.github/workflows/checkout.yml)
 - [`hello-world.yml`](.github/workflows/hello-world.yml)
 - [`inputs.yml`](.github/workflows/inputs.yml)
 - [`matrix.yml`](.github/workflows/matrix.yml)
